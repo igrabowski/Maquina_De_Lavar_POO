@@ -99,3 +99,29 @@ ublic class Maquina {
             System.out.println("Lavagem concluída!");
         }
     }
+public void iniciarCentrifugacao() {
+
+        if (ligada.equals("nao")) {
+            System.out.println("Não é possível centrifugar. A máquina está desligada.");
+        } else if (lavando.equals("sim") || lavando.equals("pausada")) {
+            System.out.println("Não é possível centrifugar enquanto a lavagem não estiver concluída.");
+        } else if (centrifugando.equals("sim")) {
+            System.out.println("A máquina já está centrifugando!");
+        } else if (porta.equals("nao")) {
+            System.out.println("Não é possível centrifugar. Feche a porta.");
+        } else {
+            centrifugando = "sim";
+            System.out.println("Centrifugação iniciada!");
+        }
+    }
+
+    public void concluirCentrifugacao() {
+
+        if (!centrifugando.equals("sim")) {
+            System.out.println("Não é possível concluir. A máquina não está centrifugando.");
+        } else {
+            centrifugando = "nao";
+            System.out.println("Centrifugação concluída!");
+        }
+    }
+}
