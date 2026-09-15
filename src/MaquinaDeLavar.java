@@ -1,4 +1,4 @@
-ublic class Maquina {
+public class Maquina {
 
     String ligada = "nao";
     String porta = "sim";
