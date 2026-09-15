@@ -1,4 +1,4 @@
-public class Maquina {
+public class MaquinaDeLavar {
 
     String ligada = "nao";
     String porta = "sim";
