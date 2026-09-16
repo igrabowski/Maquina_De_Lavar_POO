@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Maquina maquina = new Maquina();
+        MaquinaDeLavar maquina = new MaquinaDeLavar();
 
         System.out.println("TESTANDO RESTRIÇÕES");
 
